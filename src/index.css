@@ -22,7 +22,7 @@ code {
 .gradient-text {
   background-clip: text;
   color: transparent;
-  background-image: linear-gradient(to right, #ffffff, rgb(38, 19, 59),  #030303);
+  background-image: linear-gradient(to right, #ffffff, rgb(147, 102, 195),rgb(147, 162, 216),  #030303);
 }
 .typing-floating-heading {
   position: relative;
@@ -31,7 +31,10 @@ code {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.05em;
-  animation: typingAnimation 3.5s steps(40, end), floatAnimation 2s ease-in-out infinite alternate;
+  animation: typingAnimation 3.5s steps(40, end), floatAnimation 1s ease-in-out infinite alternate;
+}
+.float{
+  animation: floatAnimation 1s ease-in-out infinite alternate;
 }
 
 @keyframes typingAnimation {
@@ -55,7 +58,7 @@ code {
 .gradient-div {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, #472747, #c761dc);
+  background: linear-gradient(to right, #4c154c, #d777ea);
 }
 
 .min-h-screen {
@@ -68,6 +71,28 @@ code {
   transform-style: preserve-3d;
   transform: translateZ(-2px) scale(1);
   will-change: transform;
+}
+
+.gradient-div2{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #8f55e7, #550d9d);
+
+}
+
+.gap{
+  width: 100vw;
+  height: 20vh;
+  
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
 }
 
 

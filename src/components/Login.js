@@ -17,7 +17,7 @@ const Login = () => {
                 email,password
             })
             .then(res=>{
-                if(res.data=="exist"){
+                if(res.data=="exists"){
                     history("/home", {state:{id:email}});
                 }
                 else if(res.data=="does not exist"){
@@ -58,7 +58,7 @@ const Login = () => {
       </div>
     </div>
     <h1 className="mb-10 font-extrabold text-2xl text-white">OR</h1>
-    <Link to="/signup" className="bg-transparent text-2xl hover:bg-white  hover:text-black text-white hover:text-whtie font-bold py-2 px-4 rounded transition-all duration-300">Sign up</Link>
+    <Link to="/signup" className="bg-transparent text-2xl hover:bg-white  hover:text-black text-white hover:text-white font-bold py-2 px-4 rounded transition-all duration-300">Sign up</Link>
   </div>
 </section>
 

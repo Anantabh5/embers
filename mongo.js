@@ -1,4 +1,5 @@
-console.log("MongoDB URL:", process.env.MONGO_URI);
+require('dotenv').config();
+
 const mongoose = require('mongoose');
 
 mongoose.connect("mongodb+srv://anantabhsah:hehe@cluster1000.ecrxewn.mongodb.net/?retryWrites=true&w=majority",{
